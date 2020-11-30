@@ -3,11 +3,21 @@
   src: url(/fonts/Cyberverse.otf);
 }
 
+:root {
+    --watchColor: #F5F5DC;
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
-    font-family: Cyberverse;
+    font-family: Cyberverse, 'Courier New', Courier, monospace;
     font-size: 40px;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    background-color: var(--watchColor);
 }
         
 .clock {
@@ -17,8 +27,8 @@
     transform: translateX(-50%) translateY(-50%);
     width: 328px;
     height: 132px;
-    background-color: #000;
-    color: #48f;
+    background-color: #333;
+    color: var(--watchColor);
     padding-top: .8rem;
     text-align: center;
 }
